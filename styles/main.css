@@ -1,0 +1,62 @@
+:root{
+    --cor-de-fundo: #101B37;
+    --rosa: #E41376;
+    --azul: #01C8EE;
+    --branco: #ffffff;
+    --cinza: #bebebe;
+    --cinza-escuro: #223157;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+}
+
+.azul{
+    color: var(--azul);
+}
+
+.rosa{
+    color: var(--rosa);
+}
+
+.cinza{
+    color: var(--cinza);
+}
+
+.barra-navegacao, .cabecalho{
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.barra-navegacao__links{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    color: var(--branco);
+}
+
+.logo{
+    width: 20%;
+}
+
+
+.rodape{
+    background-color: var(--cinza-escuro);
+    text-align: center;
+}
+
+.rodape__apresentacao, .rodape__paragrafo{
+    padding: 2%;
+}
