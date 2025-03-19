@@ -51,6 +51,46 @@ body{
     width: 20%;
 }
 
+.principal__apresentacao{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 5% 5%;
+    text-align: center;
+}
+
+.principal__apresentacao__info{
+    width: 50%;
+}
+
+.principal__apresentacao__info__paragrafo{
+    text-align: left;
+    padding-top: 5%;
+}
+
+.principal__participar{
+    margin: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    justify-content: space-between;
+}
+
+.principal__trilha{
+    text-align: center;
+}
+
+.principal__trilha__secao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.principal__trilha__info{
+    width: 50%;
+    padding: 5%;
+}
 
 .rodape{
     background-color: var(--cinza-escuro);
