@@ -63,12 +63,57 @@ body{
     color: var(--branco);
     display: flex;
     justify-content: space-between;
-    margin: 2%;
+    margin: 2% 10%;
     align-items: center;
 }
 
+.cabecalho__imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: var(--cor-de-fundo);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box::before{
+    content: "";
+    position: relative;
+    width: 200px;
+    height: 600px;
+    background: linear-gradient(180deg, pink, blue);
+
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    background-color: var(--cor-de-fundo);
+    inset: 5px;
+    border-radius: inherit;
+}
+
 .cabecalho__imagem__logo{
-    width: 60%;
+    width: 40%;
+    position: absolute;
+    z-index: 1;
 }
 
 .principal__apresentacao{
