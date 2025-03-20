@@ -3,7 +3,7 @@
 :root {
     --cor-de-fundo: #101B37;
     --rosa: #E41376;
-    --azul: #01C8EE;
+    --azul: #5edfff;
     --branco: #ffffff;
     --cinza: #bebebe;
     --cinza-escuro: #223157;
@@ -18,10 +18,13 @@
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
 }
 
 .azul {
     color: var(--azul);
+    filter: drop-shadow(0 0 30px var(--azul));
 }
 
 .rosa {
@@ -50,11 +53,9 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
-
 }
 
 .item {
@@ -72,27 +73,60 @@ body {
     box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
+.cabecalho__texto{
+    width: 45%;
+}
+
 
 .cabecalho__titulo {
     font-size: 5em;
 }
 
-.cabecalho__paragrafo {
+.cabecalho__paragrafo__primeiro,
+.cabecalho__paragrafo__segundo {
     color: white;
     overflow: hidden;
     border-right: .15em solid rgb(255, 135, 229);
     white-space: nowrap;
     margin: 0;
-    animation: typing 2.0s steps(40, end), blink-caret .75s step-end infinite;
+    visibility: hidden;
 }
 
-@keyframes typing {
+.cabecalho__paragrafo__primeiro {
+    animation: typing1 2.0s steps(40, end) forwards, blink-caret .75s step-end infinite;
+    animation-delay: 0s;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.cabecalho__paragrafo__segundo {
+   animation: typing2 2.0s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+   animation-delay: 2s;
+}
+
+@keyframes typing1 {
     from {
-        width: 0
+        width: 0;;
+        visibility: hidden;
+        border-right: .15em solid rgb(255, 135, 229);
     }
 
     to {
-        width: 100%
+        width: 100%;
+        visibility: visible;
+        border-right: transparent;
+    }
+}
+
+@keyframes typing2 {
+    from {
+        width: 0;
+        visibility: hidden
+    }
+
+    to {
+        width: 100%;
+        visibility: visible;
     }
 }
 
@@ -186,10 +220,21 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 15em;
+    height: 25em;
     justify-content: space-between;
 }
 
+.principal__participar__titulo{
+    font-size: 3em;
+}
+
+.principal__participar__sub-titulo{
+    font-size: 1.5em;
+}
+
+.principal__participar__dedicacao{
+    font-size: 2em;
+}
 
 
 .principal__trilha {
