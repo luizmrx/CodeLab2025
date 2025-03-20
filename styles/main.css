@@ -38,6 +38,7 @@ body {
     justify-content: space-between;
     margin: 1.5% 2% 1% 2%;
     align-items: center;
+
 }
 
 .logo {
@@ -53,6 +54,7 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
+
 }
 
 .item {
@@ -65,7 +67,12 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15rem 12rem 20rem 12rem;
+    font-size: larger;
     align-items: center;
+}
+
+.cabecalho__titulo {
+    font-size: 4em;
 }
 
 .cabecalho__imagem {
@@ -78,7 +85,7 @@ body {
     position: relative;
     width: 300px;
     height: 400px;
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cinza-escuro);
     border-radius: 30px;
 
     display: flex;
@@ -106,7 +113,7 @@ body {
 .box::after {
     content: "";
     position: absolute;
-    background-color: var(--cor-de-fundo);
+    background-color: var(--cinza-escuro);
     inset: 5px;
     border-radius: inherit;
 }
@@ -118,7 +125,7 @@ body {
 }
 
 .principal__apresentacao {
-    background-color: #1d263d;
+    background-color: var(--cor-de-fundo);
     display: flex;
     justify-content: space-between;
     padding: 12rem 12rem 12rem 12rem;
@@ -126,13 +133,19 @@ body {
 }
 
 .principal__apresentacao__info {
+    font-size: 2em;
     width: 50%;
     padding: 5%;
 }
 
 .principal__apresentacao__info__paragrafo {
+    font-size: 0.7em;
     text-align: left;
     padding-top: 5%;
+}
+
+.principal__apresentacao__imagem {
+    margin: auto;
 }
 
 .principal__participar {
@@ -167,7 +180,7 @@ body {
 
 .principal__trilha__devjourney {
     background-color: #ffffff;
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
     padding: 7rem;
@@ -175,6 +188,12 @@ body {
 
 .principal__trilha__devjourney__info {
     color: black;
+}
+
+.principal__trilha__devjourney__paragrafo {
+    margin: 2vw;
+    color: black;
+
 }
 
 .logo__dev {
