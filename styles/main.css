@@ -505,6 +505,7 @@ body {
     .principal__apresentacao__imagem {
         width: 100%;
         height: 100%;
+        margin-bottom: 2rem;
     }
 
     .logo__dev {
@@ -519,21 +520,20 @@ body {
 
     /*Dev.Journey*/
 
-    .principal__trilha__info {
-        flex-direction: column;
-        width: 100%;
-        padding: 0.2rem;
+    .principal__trilha__devjourney {
+        justify-content: center;
     }
 
     .container {
-        padding: 1rem;
+        padding: 2rem 0 2rem 0;
+        width: auto;
+        margin: 2rem 0 2rem 0;
     }
 
     .principal__trilha__devjourney__info {
         font-size: 1.5rem;
         padding: 0.2rem;
         text-align: center;
-        margin: 2rem;
     }
 
     .principal__trilha__devjourney__paragrafo {
@@ -551,9 +551,11 @@ body {
     }
 
     .principal__trilha__info {
+        flex-direction: column;
         font-size: 0.6rem;
         width: 100%;
         padding: 0.2rem;
+        margin-bottom: 2rem;
     }
 
     .principal__trilha__imagem img {
