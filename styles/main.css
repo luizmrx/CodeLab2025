@@ -23,6 +23,7 @@ body {
     font-size: 20px;
     width: 100%;
     height: auto;
+    scroll-behavior: smooth;
 }
 
 .azul {
@@ -63,6 +64,7 @@ body {
 
 .item {
     color: var(--branco);
+    cursor: pointer;
 }
 
 .cabecalho {
@@ -528,10 +530,77 @@ body {
     }
 
     .principal__trilha__devjourney__info {
-        font-size: 2rem;
-        margin: auto;
+        font-size: 1.5rem;
+        padding: 0.2rem;
+        text-align: center;
+        margin: 2rem;
     }
 
+    .principal__trilha__devjourney__paragrafo {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    /*seção principal*/
+
+    .principal__trilha__secao {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .principal__trilha__info {
+        font-size: 0.6rem;
+        width: 100%;
+        padding: 0.2rem;
+    }
+
+    .principal__trilha__imagem img {
+        width: 90%;
+        height: 90%;
+    }
+
+    #secao__invertida {
+        flex-direction: column-reverse;
+    }
+
+    /*participar*/
+
+    .principal__participar {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 0.2rem;
+    }
+
+    .principal__participar__dedicacao {
+        font-size: 1.5rem;
+        padding: 0.2rem;
+    }
+
+    .principal__participar__titulo {
+        font-size: 2rem;
+        padding: 0.2rem;
+    }
+
+    .principal__participar__info {
+        font-size: 1.5rem;
+        padding: 0.2rem;
+    }
+
+    /*rodape*/
+
+    .rodape__apresentacao {
+        font-size: 1.5rem;
+        padding: 0.2rem;
+    }
+
+    .rodape__paragrafo {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
 
 
 }
